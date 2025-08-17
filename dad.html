@@ -1,25 +1,31 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>For Dad — OTPE</title>
-  <link rel="stylesheet" href="site.css">
-  <style>
-    body { font-family: -apple-system, system-ui, Arial, sans-serif; margin: 0; line-height: 1.6; padding: 20px; max-width: 820px; margin-inline: auto; }
-    a { text-decoration: none; }
-    .btn { display:inline-block; padding:10px 14px; border:1px solid #000; margin:10px 0; }
-    .dad { border-color:#b22234; }
-  </style>
-</head>
-<body>
-  <a class="btn" href="index.html">← Back to Home</a>
-  <h1>For My Dad</h1>
-  <p>
-    This project is dedicated to my father, Terry. Your strength, resilience and love
-    guide this journey. OTPE flows as a legacy of hope, balance, and infinite positive
-    energy — from me to you, and to the world.
-  </p>
-  <p>With love, Chris.</p>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OTPE — Dad Button</title>
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/site.js"></script>
+</head><body>
+<div class="container">
+  <header class="header">
+    <div class="brand"><img src="assets/otpe-icon.jpg" alt="OTPE emblem"><strong>OTPE</strong></div>
+    <nav class="nav"><a href="./">Home</a><a href="./dad.html" aria-current="page">Dad Button</a></nav>
+  </header>
+
+  <main class="center">
+    <section class="panel">
+      <h1 class="h1">Crypto Quick Check</h1>
+      <p id="dadline" class="big">BTC 12,500 • ETH (Personal ~19.79, Dad ~11.40) • XRP/SOL (2021 allocations)</p>
+      <button class="btn" onclick="speakById('dadline')">🔊 Read aloud</button>
+      <p class="note">Tip: On Android, enable Accessibility → Select to Speak for system voice.</p>
+    </section>
+
+    <section class="panel">
+      <h2 class="h2">Positivity Boost</h2>
+      <p id="dadAff">Every time you tap this, you step into the flow of One True Positive Energy. Calm rises. Anger dissolves. You are safe.</p>
+      <button class="btn" onclick="speakById('dadAff')">🔊 Read affirmation</button>
+    </section>
+  </main>
+
+  <footer class="footer center">© OTPE — Your private, positive button.</footer>
+</div>
+</body></html>
