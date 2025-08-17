@@ -1,0 +1,1 @@
+const speak=(t)=>{if(!('speechSynthesis'in window)){alert('Read‑aloud not supported');return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.rate=1.0;u.pitch=1.0;u.lang='en-US';speechSynthesis.speak(u)};function speakById(id){const t=document.getElementById(id)?.innerText||'';speak(t);}
