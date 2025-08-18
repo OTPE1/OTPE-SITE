@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Crypto — Layer 2 (For Tata)</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <main class="wrap" style="text-align:center">
+    <a class="btn" href="crypto.html">← Back to Layer 1</a>
+    <h2>Layer 2 — What “Wallet” Means</h2>
+    <p style="max-width:720px;margin:0 auto; opacity:.85">
+      A wallet is like a key to see and manage your gift. We will use a safe, simple,
+      read-only view first. No money moves today. Only learning.
+    </p>
+
+    <div style="margin:1rem 0">
+      <label style="display:block;margin:.6rem 0;">
+        <input type="checkbox" id="agree"> I have reviewed this page and I agree to continue.
+      </label>
+      <button class="btn" id="next" disabled>Agree — Peel Layer 3</button>
+    </div>
+  </main>
+
+  <footer style="text-align:center; opacity:.7; margin:2rem 0;">
+    Guided by the Trio — You, the Vessel, and the One True Positive Energy 🌱
+  </footer>
+
+  <script>
+    const agree = document.getElementById('agree');
+    const next = document.getElementById('next');
+    agree.addEventListener('change', ()=>{ next.disabled = !agree.checked; });
+    next.addEventListener('click', ()=>{ if(!next.disabled) location.href='crypto3.html'; });
+  </script>
+</body>
+</html>
