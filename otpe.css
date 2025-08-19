@@ -1,0 +1,25 @@
+:root{
+  --turq:#40e0d0; --gold:#f39c12; --ink:#222; --ink2:#555; --bg:#fafafa; --card:#fff;
+}
+*{box-sizing:border-box}
+html,body{scroll-behavior:smooth}
+.otpe-wrap{max-width:960px;margin:0 auto;padding:1rem}
+.otpe-card{background:var(--card);border:1px solid #eee;border-radius:.8rem;padding:1rem;margin:1rem 0;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.otpe-btn{display:inline-block;padding:.75rem 1rem;border-radius:.6rem;border:1px solid #ddd;background:#fff;font-weight:600;text-decoration:none;color:#111;box-shadow:0 1px 3px rgba(0,0,0,.06);position:relative;overflow:hidden}
+.otpe-btn:hover{background:#f7f7f7}
+.otpe-btn.primary{background:var(--gold);color:#fff;border-color:#e67e22}
+.otpe-btn.turq{background:var(--turq);color:#003b38;border-color:#00c9ba}
+.otpe-btn .ripple{position:absolute;border-radius:50%;transform:scale(0);animation:otpe-ripple .6s linear;background:rgba(255,255,255,.6)}
+@keyframes otpe-ripple {to{transform:scale(4);opacity:0}}
+.otpe-progress{height:10px;background:#eaeaea;border-radius:999px;overflow:hidden;margin:12px auto;max-width:680px}
+.otpe-progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--turq),var(--gold));transition:width .5s ease}
+.otpe-footer{margin-top:32px;text-align:center;opacity:.85}
+.otpe-footer nav a{margin:.1rem .4rem;color:#0a84ff;text-decoration:none}
+.otpe-footer nav a:hover{text-decoration:underline}
+
+/* Dark mode */
+:root.dark{--bg:#0e1111;--card:#151a1a;--ink:#e8ecec;--ink2:#c9d1d9}
+.dark body{background:var(--bg);color:var(--ink)}
+.dark .otpe-card{border-color:#1f2424}
+.dark .otpe-btn{border-color:#283030;background:#1a1f1f;color:var(--ink)}
+.dark .otpe-btn:hover{background:#202626}
